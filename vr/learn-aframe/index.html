@@ -11,18 +11,19 @@
                 <img id="skyTexture"
                     src="/vr/learn-aframe/assets/50002942511_dd17aff8db_k.jpg">
                 <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+                <video id="londonBridge" autoplay loop="true" src="/vr/learn-aframe/assets/360VR_London_On_Tower_Bridge.mp4"> </video>
             </a-assets>
-
+            <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+            <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E">
+                <a-ring color="teal" radius-inner="1" radius-outer="2"></a-ring>
+            </a-sphere>
+            <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+            <!--a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane-->
+            <!--a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" src="#groundTexture"></a-plane-->
+            <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" src="#groundTexture" material="" geometry="" scale="10 30 1"></a-plane>
             <a-sky src="#skyTexture" material="" geometry="" position="0 0 0"></a-sky>
             <a-entity camera="" position="0 1.6 0" wasd-controls="" rotation="" look-controls="" aframe-injected="" data-aframe-inspector-original-camera="">
-                <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-                <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E">
-                    <a-ring color="teal" radius-inner="1" radius-outer="2"></a-ring>
-                </a-sphere>
-                <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-                <!--a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane-->
-                <!--a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" src="#groundTexture"></a-plane-->
-                <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" src="#groundTexture" material="" geometry="" scale="10 30 1"></a-plane>
+                <a-videosphere src="#londonBridge"></a-videosphere>
             </a-entity>
             <!--a-sky src="#skyTexture" ></a-sky-->
             <!--a-sky color="#ECECEC"></a-sky-->
